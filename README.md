@@ -1,0 +1,11 @@
+## MICRO SERVIÇOS
+- Um banco para cada serviço
+- Repetição de dados, mas apenas os que são essenciais para aquele microserviço
+- Controller: são arquivos de pontos de entradas (recebimentos chamadas http)
+- Services podem ser qualquer coisa dentro do NEST, serão utilizados dentro dos controllers ou por outros services (podem ser repositórios, aplications services)
+- Inversão de dependência: recebe a funcionalidade como parâmetro do construtor, não busca essa funcionalidade.
+- Injeção de dependência: as classes serão injetadas 
+- Pensar na aplicação desconexa de conexões externas por exemplo, sem acoplamento com o banco de dados
+- Pensa na entidade como Classe
+- Uma classe não necessariamente é uma entidade no BD. 
+- Caso de uso pode ser entendido como applications services
